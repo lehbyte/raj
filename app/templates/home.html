@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block header %}
+    {% include 'navigation.html' %}
+{% endblock %}
+
+{% block content %}
+<div class="homenu">
+    <h1>Welcome to Raj's Restaurant!</h1>
+    <div class="wrapper">
+        <input class="search" type="text" id="search" placeholder="e.g. Fillet mingon">
+        <input class="submit" type="submit" value="Search" >
+    </div>
+    
+    <div class="food-grid">
+        <div class="food-item">1</div>
+        <div class="food-item">2</div>
+        <div class="food-item">3</div>
+        <div class="food-item">4</div>
+        <div class="food-item">5</div>
+        <div class="food-item">6</div>
+    </div>
+</div>
+{% endblock %}

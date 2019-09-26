@@ -1,0 +1,40 @@
+a{
+    color: $link-color;
+    text-decoration: none;
+    cursor: pointer;
+}
+a:hover{
+    border-bottom: 1px solid $outline;    
+}
+a:link, a:visited{
+    color: $link-visited;    
+}
+a:link:active, a:visited:active{
+    color: $link-active;
+}
+
+.navigation{
+    text-align: center;
+    font-size: 1.2em;
+    font-variant-caps: all-petite-caps;    
+}
+
+ul{    
+    list-style-type: none;
+    display: inline-flex;
+    
+}
+
+@media only screen and (max-width: 432px){
+    ul{        
+        list-style: none;   
+        li{
+            margin: 3px;
+            padding: 3px;
+            border: 2px solid black;
+        }
+        &:hover{
+            background-color: black;
+        }
+    }
+}

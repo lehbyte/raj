@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap'); 
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+    html {
+      font-family: 'Josefin Sans', sans-serif; }
+
+      html, body {
+        width: 100%;
+        min-height: 100%; }
+
+        a {
+          color: darkgreen;
+          text-decoration: none;
+          cursor: pointer; }
+
+          a:hover {
+            border-bottom: 1px solid gray; }
+
+            a:link, a:visited {
+              color: black; }
+
+              a:link:active, a:visited:active {
+                color: seagreen; }
+
+                .navigation {
+                  text-align: center;
+                  font-size: 1.2em;
+                  font-variant-caps: all-petite-caps; }
+
+                  ul {
+                    list-style-type: none;
+                    display: inline-flex; }
+
+                    @media only screen and (max-width: 432px) {
+                      ul {
+                        list-style: none;   }
+                        ul li {
+                          margin: 3px;
+                          padding: 3px;
+                          border: 2px solid black;   }
+                          ul:hover {
+                            background-color: black;   }
+}
+
+  h1 {
+    font-size: 48px;
+    text-align: center;
+    padding-bottom: 25px; }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background: -webkit-linear-gradient(to bottom, white 20%, burlywood 80%);
+      background: linear-gradient(to bottom, white 20%, #e0b172 80%);
+      background-attachment: fixed; }
+
+      main * {
+        margin: 5px;
+        padding: 5px; }
+
+        .auth {
+          width: 100%;
+          padding: 0;
+          margin: -20px 0 0 -30px; }
+          .auth .signup {
+            float: left; }
+            .auth .login {
+              float: right;
+              margin: -5px -55px 0 0; }
+              .auth .login input {
+                margin-top: -10px;
+                padding: 0;
+                width: 100px; }
+          .auth button {
+            margin: 0px;
+            padding: 0px; }
+
+  .wrapper {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 60px;
+    font-size: 0; }
+
+    .su-title {
+      margin: 0 0 0 30%;
+      color: royalblue; }
+
+      .signup-form {
+        padding: 10px;
+        width: 100%; }
+
+        .signup-form form {
+          display: flex;
+          flex-direction: column;
+          padding: 20px;
+          width: 50%;
+          margin-left: 25%; }
+
+          input {
+            font-size: 13px;
+            vertical-align: middle;
+            padding: 0px;
+            margin: 0px; }
+
+            .search {
+              padding: 0 30px;
+              font-size: 20px;
+              width: 40%;
+              max-width: 400px;
+              height: 50px;
+              border: 1px solid #b3b3b3;
+              border-radius: 25px 0 0 25px; }
+
+              .submit {
+                font-size: 20px;
+                color: white;
+                cursor: pointer;
+                border: none;
+                background-color: black;
+                background-size: 34px 34px;
+                border-radius: 0 25px 25px 0;
+                padding: 0px 25px 0px 17px;
+                display: inline-block;
+                width: 100px;
+                height: 50px; }
+
+                .food-grid {
+                  display: grid;
+                  grid-gap: 5px;
+                  grid-auto-rows: 400px;
+                  grid-template-columns: 33% 33% 33%;
+                  height: inherit;
+                  background-color: transparent; }
+
+                  .food-item {
+                    text-align: center;
+                    padding: 2px;
+                    margin: 2px;
+                    background-color: blanchedalmond;
+                    border-radius: 25px; }
+
+                    @media screen and (max-width: 516px) {
+                      .food-grid {
+                        grid-template-columns: 100%;   }
+                        .food-item {
+                          background-color: seashell;   }
+}
+
+  footer {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    color: burlywood;
+    background-color: black;
+    position: relative; }
+
+    .footer-wrap {
+      display: flex;
+      flex-direction: row;
+      padding: 20px; }
+
+      .footer-left, .footer-middle, .footer-right {
+        padding: 10px; }
+
+        footer h3, footer p {
+          color: snow;
+          padding: 10px;
+          text-align: center; }
+
+          footer p {
+            padding: 10px; }
+
+            @media screen and (max-width: 516px) {
+              @media screen and (max-width: 516px) {
+                @supports (display: flex) {
+                  .footer-wrap {
+                    flex-direction: column;       }
+    }
+  }
+}
